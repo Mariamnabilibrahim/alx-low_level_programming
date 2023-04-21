@@ -7,6 +7,7 @@
  *
  * Return: 0 (success)
 */
+
 int main(void)
 {
 	int digit1 = 0, digit2;
