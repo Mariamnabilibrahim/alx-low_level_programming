@@ -1,9 +1,9 @@
-#include <stdio.h>
+#include<stdio.h>
 
 /**
  * main - Entry point
  *
- * Description: print two two digit numbers.
+ * Description: print all different two digits.
  *
  * Return: Always 0 (success)
 */
