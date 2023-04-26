@@ -1,5 +1,5 @@
 #include "main.h"
- /**
+/**
   * print_times_table - prints time table of n starting with 0
   *
   * @n: take number  input
