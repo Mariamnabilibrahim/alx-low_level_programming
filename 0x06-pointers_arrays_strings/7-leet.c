@@ -5,7 +5,7 @@
  *
  * @c: string
  *
- * Return: string
+ * Return: cp
 */
 
 char *leet(char *c)
@@ -19,7 +19,7 @@ char *leet(char *c)
 	{
 		for (x = 0; x < sizeof(Letter) / sizeof(char); x++)
 		{
-			if (*c == Letter[x] || *c == key[x] + 32)
+			if (*c == Letter[x] || *c == Letter[x] + 32)
 			{
 				*c = 48 + Num[x];
 			}
