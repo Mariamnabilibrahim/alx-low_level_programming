@@ -12,7 +12,7 @@ char *string_toupper(char *str)
 {
 	int num;
 
-	for (x = 0, str[x] != '\0', x++)
+	for (x = 0; str[x] != '\0'; x++)
 	{
 		if (str[x] >= 97 && str[x] <= 122)
 		{
