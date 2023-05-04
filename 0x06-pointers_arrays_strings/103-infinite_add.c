@@ -17,10 +17,8 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 
 	while (n1[a] != '\0')
 		a++;
-
 	while (n2[b] != '\0')
 		b++;
-
 	if (a > b)
 		d = a;
 
@@ -53,5 +51,5 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 			r[d + 1] = r[d];
 		r[0] = d + '0';
 	}
-return (r);
+	return (r);
 }
