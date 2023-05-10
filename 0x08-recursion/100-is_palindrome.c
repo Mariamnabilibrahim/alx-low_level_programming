@@ -47,7 +47,5 @@ int fun1(char *s, int x, int y, int z)
 	return (1);
 	}
 	else if (s[x] != s[y])
-	{
 	return (0);
-	}
 }
