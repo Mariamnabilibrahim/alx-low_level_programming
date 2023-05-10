@@ -16,14 +16,12 @@ int is_prime_number(int n)
 }
 
 /**
- * is_prime_number - function that returns 1
- *		if the input integer is a prime number
- * _prime - function input integer is a prime number
+ * _prime - function that cheak input integer is a prime number
+ *
  * @n: input
  * @x: input
  * Return: 1 otherwise return 0.
 */
-
 int _prime(int n, int x)
 {
 	if (x >= n && n > 1)
