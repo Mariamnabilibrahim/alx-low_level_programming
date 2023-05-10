@@ -1,11 +1,9 @@
 #include "main.h"
-
 /**
  * fun2 - function that returns 1 if a string is a palindrome and 0 if not
  * @s: string
  * Return: 1 if a string is a palindrome and 0 if not.
 */
-
 int is_palindrome(char *s);
 int fun1(char *s, int x, int y, int z);
 int fun2(char *s)
@@ -24,11 +22,9 @@ int fun2(char *s)
  * @s: string
  * Return: 1 if a string is a palindrome and 0 if not.
 */
-
 int is_palindrome(char *s)
 {
 	int y = fun2(s);
-
 	return (fun1(s, 0, y - 1, y % 2));
 }
 /**
