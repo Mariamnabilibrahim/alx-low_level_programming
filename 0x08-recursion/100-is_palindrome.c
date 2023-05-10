@@ -10,8 +10,8 @@ int is_palindrome(char *s);
 int fun1(char *s, int x, int y, int z);
 int fun2(char *s)
 {
-	int a = 0
-		;
+	int a = 0;
+
 	if (*s > '\0')
 	{
 		a += fun2(s + 1) + 1;
