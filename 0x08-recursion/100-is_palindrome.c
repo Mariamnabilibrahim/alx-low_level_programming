@@ -40,7 +40,7 @@ int is_palindrome(char *s)
  * @z: input
  * Return: 1 if a string is a palindrome and 0 if not.
 */
-int fun1(char *s, int x, int y, int z);
+int fun1(char *s, int x, int y, int z)
 {
 	if ((x == y && z != 0) || (x == y + 1 && z == 0))
 	{
