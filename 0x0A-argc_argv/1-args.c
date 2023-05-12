@@ -4,7 +4,7 @@
  * main -  program that prints the number of arguments passed into it.
  *
  * @argc: inpur
- * @argv: input
+ * @argv: pointer an array
  *
  * Return: always 0 (success)
 */
