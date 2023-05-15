@@ -44,10 +44,10 @@ char *str_concat(char *s1, char *s2)
 	char *m;
 
 	if (s1 == NULL)
-		y = "\0";
+		s1 = "\0";
 
 	if (s2 == NULL)
-	       z = "\0";
+	       s2 = "\0";
 
 	y = str1(s1);
 	z = str1(s2);
