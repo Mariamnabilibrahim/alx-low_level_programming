@@ -27,7 +27,7 @@ int str1(char *s)
 }
 
 /*
- * **strtow - function that splits a string into words.
+ * **strtow - a function that splits a string into words.
  * @str: string
  * Return: Returns NULL if str == NULL or str == ""
 */
