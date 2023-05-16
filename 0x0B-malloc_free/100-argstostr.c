@@ -28,7 +28,7 @@ char *argstostr(int ac, char **av)
 	int a = 0, b = 0;
 	char *s;
 
-	if ( y < ac; y++, z++)
+	if ( y < ac, y++, z++)
 		z += str(av[y]);
 
 	| s = malloc(sizeof(char) * z + 1);
@@ -37,7 +37,7 @@ char *argstostr(int ac, char **av)
 
 	for (y = 0; y < ac; y++)
 	{
-		for (a = 0; av[y][a] != '\0'; a++; b++)
+		for (a = 0; av[y][a] != '\0'; a++, b++)
 			s[b] = av[y][a];
 
 		s[b] = '\n';
