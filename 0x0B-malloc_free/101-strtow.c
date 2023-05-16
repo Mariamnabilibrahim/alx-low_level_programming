@@ -20,7 +20,7 @@ int str1(char *s)
 				y++;
 		}
 		else if (x == 0)
-			n++;
+			b++;
 	}
 	y++;
 	return (y);
@@ -60,7 +60,7 @@ char **strtow(char *str)
 			{
 				for (z = 0; z < d; z++)
 					free(c[d]);
-				free(c[b - 1];
+				free(c[b - 1]);
 				free(c);
 				return (NULL);
 			}
