@@ -28,7 +28,10 @@ char *argstostr(int ac, char **av)
 	int a = 0, b = 0;
 	char *s;
 
-	if ( y < ac, y++, z++)
+	if (ac == 0 || av == NULL)
+		return (NULL);
+
+	for (; y < ac; y++, z++)
 		z += str(av[y]);
 
 	| s = malloc(sizeof(char) * z + 1);
