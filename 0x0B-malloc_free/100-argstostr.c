@@ -34,7 +34,7 @@ char *argstostr(int ac, char **av)
 	for (; y < ac; y++, z++)
 		z += str(av[y]);
 
-	| s = malloc(sizeof(char) * z + 1);
+	s = malloc(sizeof(char) * z + 1);
 	if (s == 0)
 		return (NULL);
 
