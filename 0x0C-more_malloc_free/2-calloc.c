@@ -8,24 +8,23 @@
  * @x: input
  * @y: input
  * @z: input
- * Return: If nmemb or size is 0, then _calloc returns NULL
- *	If malloc fails, then _calloc returns NULl
+ * Return: ptr
 */
 
 char fun(char *x, char y, unsigned int z)
 {
-	char *a = x;
+	char *ptr = x;
 
 	while (z--)
 		*x++ = y;
 
-	return (a);
+	return (ptr);
 }
 
 /**
  * *_calloc - function that allocates memory for an array, using malloc.
  * @nmemb: input
- * @size: input
+ * @size: bytes
  * Return: If nmemb or size is 0, then _calloc returns NULL
  *	If malloc fails, then _calloc returns NULL
 */
