@@ -7,7 +7,7 @@
  * @s1: string
  * @s2: string
  * @n: input
- * Return: always 0 (success)
+ * Return: pointer to space
 */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
