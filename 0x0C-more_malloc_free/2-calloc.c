@@ -17,7 +17,7 @@ char fun(char *x, char y, unsigned int z)
 	while (z--)
 		*x++ = y;
 
-	return (a)
+	return (a);
 }
 
 /**
