@@ -2,12 +2,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 /**
  * *string_nconcat - function that concatenates two strings.
  * @s1: string
  * @s2: string
- * @n: input
- * Return: pointer to space
+ * @n: number of byte
+ * Return: pointer shall point to a newly allocated space in memory
 */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
