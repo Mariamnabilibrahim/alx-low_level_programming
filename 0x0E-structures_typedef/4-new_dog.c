@@ -26,7 +26,7 @@ int _strl(const char *s)
  * Return: x
 */
 
-char *_strc(char *x, char *)
+char *_strc(char *x, char *y)
 {
 	int z;
 
