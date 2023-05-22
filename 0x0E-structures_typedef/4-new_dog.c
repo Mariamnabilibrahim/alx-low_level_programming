@@ -3,13 +3,13 @@
 #include <stdio.h>
 
 /**
- * strl - function to get lenght
+ * _strl - function to get lenght
  * @s: string
  *
  * Return: lenght s
 */
 
-int strl(const char *s)
+int _strl(const char *s)
 {
 	int l = 0;
 
@@ -19,14 +19,14 @@ int strl(const char *s)
 	return (l);
 }
 /**
- * strc - function to copy string
+ * _strc - function to copy string
  * @x: string to copy
  * @y: string
  *
  * Return: x
 */
 
-char *strc(char *x; char *y)
+char *_strc(char *x, char *)
 {
 	int z;
 
@@ -58,14 +58,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (dog == NULL)
 		return (NULL);
 
-	dog->name = malloc(sizeof(char) * (strl(name) + 1));
+	dog->name = malloc(sizeof(char) * (_strl(name) + 1));
 	if ((*dog).name == NULL)
 	{
 		free(dog);
 		return (NULL);
 	}
 
-	dog->owner = malloc(sizeof(char) * (strl(owner) + 1));
+	dog->owner = malloc(sizeof(char) * (_strl(owner) + 1));
 	if ((*dog).owner == NULL)
 	{
 		free(dog->name);
@@ -73,9 +73,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	dog->name = strc(dog->name, name);
+	dog->name = _strc(dog->name, name);
 	dog->age = age;
-	dog->owner = strc(dog->owner, owner);
+	dog->owner = _strc(dog->owner, owner);
 
 	return (dog);
 }
