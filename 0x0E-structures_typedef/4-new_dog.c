@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "dog.h"
 #include <stdlib.h>
 
@@ -6,7 +5,7 @@
  * strl - function to get lenght
  * @s: string
  *
- * Return: lenght
+ * Return: lenght s
 */
 
 int strl(const char *s)
