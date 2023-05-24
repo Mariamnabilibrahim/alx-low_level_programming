@@ -22,7 +22,7 @@ int main(int argc, char **argv)
 		printf("Error\n"), exit(2);
 
 	while (y--)
-		printf("%02hhx%s", *x, y ? " " : "\n");
+		printf("%02hhx%s", *x++, y ? " " : "\n");
 
 	return (0);
 }
