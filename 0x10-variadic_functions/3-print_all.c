@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdarg.h>
 #include "variadic_functions.h"
 
 /**
@@ -31,7 +32,7 @@ void format_int(char *separator, va_list ap)
 
 void format_float(char *separator, va_list ap)
 {
-	printf("%s%f", separator, va_arg(ap, int));
+	printf("%s%f", separator, va_arg(ap, double));
 }
 
 /**
