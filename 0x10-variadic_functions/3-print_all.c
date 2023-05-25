@@ -43,17 +43,19 @@ void format_float(char *sep, va_list p)
 
 void format_string(char *sep, va_list p)
 {
-	char *s = va_arg(p, char *);
+	char *str = va_arg(p, char *);
 
-	switch ((int)(!s))
+	switch ((int)(!str))
 	case 1:
-		s = "(nil)";
-	printf("%s%s", sep, s);
+		str = "(nil)";
+	printf("%s%s", sep, str);
 }
 
 /**
  * print_all - function that prints anything.
  * @format:  is a list of types of arguments
+ *
+ * Return: Print a new line at the end of your function
 */
 
 void print_all(const char * const format, ...)
