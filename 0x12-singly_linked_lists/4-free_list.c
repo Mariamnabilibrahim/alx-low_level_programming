@@ -12,17 +12,17 @@
 
 void free_list(list_t *head)
 {
-	list_t *node, *nxt_node;
+	list_t *node, *next_node;
 
 	if (!head)
 		return;
 	node = head;
 	while (node)
 	{
-		nxt_node = node->next;
+		next_node = node->next;
 		free(node->sre);
 		free(node);
-		node = nxt_node;
+		node = next_node;
 	}
 
 }
