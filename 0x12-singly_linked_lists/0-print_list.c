@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <lists.h>
+#include "lists.h"
 
 /**
  * strl - function that prints all the elements of a list_t list
