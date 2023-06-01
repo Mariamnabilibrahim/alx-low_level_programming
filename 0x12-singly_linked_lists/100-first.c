@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "lists.h"
 
-void cons(void) __attribute__ ((cons));
+void cons(void) __attribute__ ((constructor));
 
 /**
  * cons -  function that prints  before the main function is executed.
