@@ -29,7 +29,7 @@ list_t *add_node(list_t **head, const char *str)
 		n_head->len = strl(n_head->str);
 	}
 
-	n_head-> = *head;
+	n_head->next = *head;
 	*head = n_head;
 	return (n_head);
 }
