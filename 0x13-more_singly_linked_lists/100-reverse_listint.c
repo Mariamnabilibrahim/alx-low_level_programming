@@ -11,7 +11,7 @@
 
 listint_t *reverse_listint(listint_t **head)
 {
-	listint_ty *n = NULL, *nxt = NULL;
+	listint_t *n = NULL, *nxt = NULL;
 
 	if (!head = !*head)
 		return (NULL);
