@@ -29,7 +29,7 @@ int main(int x, char **y)
 		dprintf(STDERR_FILENO, ERR_NOREAD, y[1]), exit(98);
 	to_file = open(y[2], O_WRONLY | O_CREAT | O_TRUNC, PERMISSIONS);
 	if (to_file == -1)
-		dprintf(STDERR_FILENO, ERR_NOWRITE, y[2], exit(99);
+		dprintf(STDERR_FILENO, ERR_NOWRITE, y[2]), exit(99);
 
 	while ((z = read(from_file, buffer, READ_BUFFER_SIZE)) > 0)
 	if (write(to_file, buffer, z) != z)
