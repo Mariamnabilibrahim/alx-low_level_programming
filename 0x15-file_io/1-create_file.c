@@ -32,7 +32,7 @@ int _lenght(char *str)
 int create_file(const char *filename, char *text_content)
 {
 	int file;
-	ssize_t byte = 0, l = _lenght(text_conttent);
+	ssize_t byte = 0, l = _lenght(text_content);
 
 	if (!filename)
 		return (-1);
