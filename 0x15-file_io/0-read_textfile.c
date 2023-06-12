@@ -13,18 +13,18 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int f;
-	ssize_t b;
-	char buf[READ_BUF_SIZE * 8];
+	int file;
+	ssize_t byte;
+	char buffer[READ_BUFFER_SIZE * 8];
 
 	if (!filename || !letters)
 		return (0);
 
-	f = open(filename, O_RDONLY);
-	if (f == -1)
+	file = open(filename, O_RDONLY);
+	if (file == -1)
 		return (0);
-	b = read(f, &buf[0], letters);
-	b = write(STDOUT_FILENO, &buf[0], b);
-	close(f);
-	return (b);
+	byte = read(file, &buffer[0], letters);
+	byte = write(STDOUT_FILENO, &buffer[0], byte);
+	close(file);
+	return (byte);
 }
